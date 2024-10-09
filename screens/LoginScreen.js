@@ -9,7 +9,7 @@ import {
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { themeColors } from "../theme";
-import { ArrowLeft2 } from "iconsax-react-native";
+import { Apple, ArrowLeft2, Facebook, Google } from "iconsax-react-native";
 import image from "../assets/images/welcome.png";
 import { useNavigation } from "@react-navigation/native";
 
@@ -62,14 +62,14 @@ export default function LoginScreen() {
         </View>
         <Text className="text-gray-700 text-center mt-10">or</Text>
         <View className="flex-row justify-center mt-8  space-x-12">
-          <TouchableOpacity className="bg-gray-100 py-3 rounded-xl w-10 h-10">
-            <Text className="text-center  text-xl font-bold">G</Text>
+          <TouchableOpacity className="bg-gray-100 py-3 rounded-xl w-12 h-12 items-center justify-center">
+            <Google size={24} color="#DB4437" />
           </TouchableOpacity>
-          <TouchableOpacity className="bg-gray-100 py-3 rounded-xl w-10 h-10">
-            <Text className="text-center  text-xl font-bold">A</Text>
+          <TouchableOpacity className="bg-gray-100 py-3 rounded-xl w-12 h-12 items-center justify-center">
+            <Apple size={24} color="#000000" />
           </TouchableOpacity>
-          <TouchableOpacity className="bg-gray-100 py-3 rounded-xl w-10 h-10">
-            <Text className="text-center  text-xl font-bold">F</Text>
+          <TouchableOpacity className="bg-gray-100 py-3 rounded-xl w-12 h-12 items-center justify-center">
+            <Facebook size={24} color="#4267B2" />
           </TouchableOpacity>
         </View>
 
